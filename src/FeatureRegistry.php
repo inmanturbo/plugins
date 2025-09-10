@@ -2,9 +2,9 @@
 
 namespace Inmanturbo\Plugins;
 
-use Inmanturbo\Plugins\Concerns\ResolvesFeatureValue;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
+use Inmanturbo\Plugins\Concerns\ResolvesFeatureValue;
 use Laravel\Pennant\Feature;
 
 class FeatureRegistry
