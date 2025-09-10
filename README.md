@@ -7,27 +7,12 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/plugins.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/plugins)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
 composer require inmanturbo/plugins
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="plugins-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -39,21 +24,28 @@ php artisan vendor:publish --tag="plugins-config"
 This is the contents of the published config file:
 
 ```php
+<?php
+
+// config for Inmanturbo/Plugins
+
+use Inmanturbo\Plugins\PluginFlags;
+
 return [
+    'default' => $fallback = PluginFlags::FALLBACK,
+
+    'options' => [
+        // 'layout' => env('LAYOUT_PLUGIN'),
+    ],
+
+    'enabled' => [
+        // 'layout' => PluginFlags::get('layout', $fallback),
+    ],
+
+    'resolvers' => [
+        //
+    ]
 ];
-```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="plugins-views"
-```
-
-## Usage
-
-```php
-$plugins = new Inmanturbo\Plugins();
-echo $plugins->echoPhrase('Hello, Inmanturbo!');
 ```
 
 ## Testing
