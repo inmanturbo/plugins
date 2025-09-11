@@ -3,7 +3,6 @@
 namespace Inmanturbo\Plugins;
 
 use BackedEnum;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Manager;
 use Laravel\Pennant\Feature as Pennant;
 
