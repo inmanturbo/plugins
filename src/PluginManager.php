@@ -28,9 +28,6 @@ class PluginManager extends Manager
             default => $driver,
         });
 
-        Log::info($driver);
-        Log::info($plugin);
-
         return parent::driver($plugin);
     }
 }
