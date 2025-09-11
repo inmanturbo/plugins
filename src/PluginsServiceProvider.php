@@ -2,7 +2,6 @@
 
 namespace Inmanturbo\Plugins;
 
-use Inmanturbo\Plugins\Commands\PluginsCommand;
 use Laravel\Pennant\Feature;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
