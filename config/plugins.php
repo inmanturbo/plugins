@@ -10,7 +10,7 @@ return [
     ],
 
     'enabled' => [
-        // 'layout' => PluginFlags::get('layout', $fallback),
+        // 'layout' => env('LAYOUT_PLUGIN', $fallback),
     ],
 
     'resolvers' => [
