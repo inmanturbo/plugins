@@ -12,7 +12,7 @@ return [
     ],
 
     'enabled' => [
-        // 'layout' => env('LAYOUT_PLUGIN', $default),
+        // 'layout' => env('LAYOUT_PLUGIN', $fallback),
     ],
 
     'resolvers' => [
