@@ -35,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Inmanturbo\\Plugins\\": "src/",
-            "Inmanturbo\\Plugins\\Database\\Factories\\": "database/factories/"
+            "Inmanturbo\\Plugins\\": "src/"
         }
     },
     "autoload-dev": {

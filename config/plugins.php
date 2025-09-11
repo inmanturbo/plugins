@@ -2,10 +2,8 @@
 
 // config for Inmanturbo/Plugins
 
-use Inmanturbo\Plugins\PluginFlags;
-
 return [
-    'default' => $fallback = PluginFlags::FALLBACK,
+    'default' => 'default',
 
     'options' => [
         // 'layout' => env('LAYOUT_PLUGIN'),

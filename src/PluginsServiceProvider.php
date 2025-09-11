@@ -18,8 +18,7 @@ class PluginsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('plugins')
-            ->hasConfigFile()
-            ->hasCommand(PluginsCommand::class);
+            ->hasConfigFile();
     }
 
     public function packageBooted()
